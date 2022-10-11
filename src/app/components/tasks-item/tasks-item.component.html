@@ -1,5 +1,14 @@
 <!-- Es nuestra tarjeta-->
 <div class="task">
-    <h3>{{task.text}}</h3>
-    <h3>{{task.day}}</h3>
+    <h3>
+        {{task.text}} 
+        <fa-icon 
+            [icon]="faTimes"
+            [ngStyle] = "{'color': 'red'}" 
+        ></fa-icon>
+        <!-- [ngStyle] esto es online se pudo haber hecho con una class -->
+    </h3>
+    <h3>
+        {{task.day}}
+    </h3>
 </div>
