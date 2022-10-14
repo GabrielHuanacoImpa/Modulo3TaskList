@@ -79,10 +79,34 @@
       "id": 13
     },
     {
-      "text": "hola",
-      "day": "mañana",
+      "text": "1",
+      "day": "2",
       "reminder": true,
       "id": 14
+    },
+    {
+      "text": "sadfas",
+      "day": "asdas",
+      "reminder": true,
+      "id": 15
+    },
+    {
+      "text": "Noelia",
+      "day": "Lunes",
+      "reminder": true,
+      "id": 17
+    },
+    {
+      "text": "Marcos",
+      "day": "Lunes",
+      "reminder": false,
+      "id": 18
+    },
+    {
+      "text": "Roly",
+      "day": "Mierrcoles",
+      "reminder": true,
+      "id": 19
     }
   ]
 }

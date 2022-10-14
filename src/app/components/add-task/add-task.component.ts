@@ -4,18 +4,27 @@ import { Subscription } from 'rxjs';
 import { UiService } from 'src/app/service/ui.service'; 
 import { Task } from '../../Task'
 
+import {NgForm} from '@angular/forms'
+
+//import { FormBuilder, FormGroup } from '@angular/forms';
+
 @Component({
   selector: 'app-add-task',
   templateUrl: './add-task.component.html',
   styleUrls: ['./add-task.component.css']
 })
 export class AddTaskComponent implements OnInit {
+  //para hacer que se borre formulario cuando se guardo
+  //myForm: FormGroup;
   /*emitimos, para pasar al componente de tarea la nueva tarea */
   @Output() onAddTask: EventEmitter<Task> = new EventEmitter();
 
+  
   text: string = "";
   day: string = "";
   reminder: boolean = false;
+  
+
   showAddTask: boolean = false;
   subscription?: Subscription;
 
@@ -31,6 +40,13 @@ export class AddTaskComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    /*
+    myForm=new FormGroup({
+      text:new String(""),
+      day: string = "",
+      reminder: boolean = false,
+    })
+    */
     //resestForm()
   }
 
@@ -49,5 +65,13 @@ export class AddTaskComponent implements OnInit {
 
   //TODO emit event : es emitir evento
 
+  }
+  //Formularios basados ​​en plantillas no es Formas reactivas.
+  completeMyForm(myForm: NgForm){
+    myForm.reset()
+    // nos permite limpiar formulario cuando ya se guardo los datos
+
 }
+
+
 }

@@ -1,7 +1,8 @@
-<form 
+<form #myForm="ngForm" 
     class="add-form" 
     (ngSubmit)="onSubmit()"
     *ngIf="showAddTask"
+    (ngSubmit)="completeMyForm(myForm)"
 > <!--agrgamos una directiva ((ngSubmit) para reconocer cuando 
     hacemos click en el boton "onSubmit"
     showAddTask = verdadero , muestro formulario
@@ -40,6 +41,10 @@
     <!--{{ text }} {{day}} {{reminder}} -->
     <!--doblebaining nos muestra abajo
          que nos indica que se esta guardando en el controlador-->
-    <input type="submit" value="Save Task" class="btn btn-block">
+    <input type="submit" 
+            value="Save Task" 
+            class="btn btn-block"
+           
+    >
 
 </form>
