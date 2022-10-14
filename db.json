@@ -1,5 +1,5 @@
 {
-  "tasks":[
+  "tasks": [
     {
       "id": 1,
       "text": "Terminar primer modulo de angular",
@@ -11,19 +11,78 @@
       "text": "Hacer las compras para la cena",
       "day": "Agosto 5 a las 12:00",
       "reminder": true
-   },
-   {
-      "id": 3,
-      "text": "Investigar sobre Boostrap",
-      "day": "Agosto 5 a las 12:00",
-      "reminder": false
     },
     {
-      "id": 4,
-      "text": "Ir al correo",
-      "day": "Agosto 6 a las 8:00",
-      "reminder": false
+      "text": "Pepe",
+      "day": "13 julio",
+      "reminder": true,
+      "id": 3
+    },
+    {
+      "text": "Pepe",
+      "day": "13 julio",
+      "reminder": true,
+      "id": 4
+    },
+    {
+      "text": "Pepe",
+      "day": "13 julio",
+      "reminder": true,
+      "id": 5
+    },
+    {
+      "text": "Pepe",
+      "day": "13 julio",
+      "reminder": true,
+      "id": 6
+    },
+    {
+      "text": "Pepe",
+      "day": "13 julio",
+      "reminder": true,
+      "id": 7
+    },
+    {
+      "text": "Pepe",
+      "day": "13 julio",
+      "reminder": true,
+      "id": 8
+    },
+    {
+      "text": "Pepe",
+      "day": "13 julio",
+      "reminder": true,
+      "id": 9
+    },
+    {
+      "text": "Pepe",
+      "day": "13 julio",
+      "reminder": true,
+      "id": 10
+    },
+    {
+      "text": "hola",
+      "day": "mañana",
+      "reminder": false,
+      "id": 11
+    },
+    {
+      "text": "hola",
+      "day": "mañana",
+      "reminder": true,
+      "id": 12
+    },
+    {
+      "text": "hola",
+      "day": "mañana",
+      "reminder": true,
+      "id": 13
+    },
+    {
+      "text": "hola",
+      "day": "mañana",
+      "reminder": true,
+      "id": 14
     }
-
   ]
 }

@@ -1,0 +1,45 @@
+<form 
+    class="add-form" 
+    (ngSubmit)="onSubmit()"
+    *ngIf="showAddTask"
+> <!--agrgamos una directiva ((ngSubmit) para reconocer cuando 
+    hacemos click en el boton "onSubmit"
+    showAddTask = verdadero , muestro formulario
+-->
+    <div class="form-control">
+        <label for="text">Task</label>
+        <input 
+            type="text" 
+            name="text" 
+            id="text" 
+            placeholder="Add Task Text"
+            [(ngModel)]="text"
+        />
+    </div>
+
+    <div class="form-control">
+        <label for="day">Day & Time</label>
+        <input 
+            type="text" 
+            name="day" 
+            id="day" 
+            placeholder="Add Day & Time"
+            [(ngModel)]="day"
+        />
+    </div>
+
+    <div class="form-control form-control-check">
+        <label for="reminder">Day & Time</label>
+        <input 
+            type="checkbox" 
+            name="reminder" 
+            id="reminder"
+            [(ngModel)]="reminder"
+        />
+    </div>
+    <!--{{ text }} {{day}} {{reminder}} -->
+    <!--doblebaining nos muestra abajo
+         que nos indica que se esta guardando en el controlador-->
+    <input type="submit" value="Save Task" class="btn btn-block">
+
+</form>

@@ -1,10 +1,15 @@
 <!-- Es nuestra tarjeta-->
-<div class="task">
+<div 
+    class="task"
+    [ngClass]="{ reminder: task.reminder }"
+    (click)="onToggle(task)"
+>
     <h3>
         {{task.text}} 
         <fa-icon 
             [icon]="faTimes"
             [ngStyle] = "{'color': 'red'}" 
+            (click)="onDelete(task)" 
         ></fa-icon>
         <!-- [ngStyle] esto es online se pudo haber hecho con una class -->
     </h3>
